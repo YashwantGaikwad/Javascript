@@ -1,0 +1,12 @@
+/**
+ * @param {number[]} arr
+ * @param {Function} fn
+ * @return {number[]}
+ */
+var map = function(arr, fn) {
+    let temparr =[];
+    for(i=0; i<arr.length; i++){
+        temparr[i] = fn(arr[i], i);
+    }
+    return temparr;
+};
